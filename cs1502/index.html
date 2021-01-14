@@ -1,0 +1,1201 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Lohit Devanagari";
+	panose-1:0 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-right:0in;
+	margin-left:0in;
+	font-size:24.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link=blue vlink="#954F72">
+
+<div class=WordSection1>
+
+<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=left
+ width=0 style='width:12.0in;margin-left:6.75pt;margin-right:6.75pt'>
+ <tr>
+  <td width=1152 colspan=2 valign=top style='width:12.0in;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif'><img width=83
+  height=83 id="Picture 1" src="index_files/image001.png"></span></p>
+  <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+  style='font-size:24.0pt;font-family:"Times New Roman",serif'>CS1502 Formal
+  Methods in Computer Science</span></b></p>
+  <p class=MsoNormal align=center style='margin-top:12.25pt;text-align:center;
+  line-height:normal'><span style='font-size:14.0pt;font-family:"Arial",sans-serif'>Fall
+  2017</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=174 valign=top style='width:130.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:12.25pt;line-height:normal'><b><span
+  style='font-size:14.0pt;font-family:"Arial",sans-serif'>Course Information</span></b></p>
+  </td>
+  <td width=978 valign=top style='width:733.5pt;padding:0in 0in 0in 0in'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=left
+   width="100%" style='width:100.0%;margin-left:-2.25pt;margin-right:-2.25pt'>
+   <tr>
+    <td width="17%" valign=top style='width:17.02%;border:double gray 1.0pt;
+    border-right:none;padding:2.9pt 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal style='line-height:normal'><b><span style='font-size:
+    12.0pt;font-family:"Times New Roman",serif'>Instructor</span></b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>:</span></p>
+    </td>
+    <td width="82%" valign=top style='width:82.98%;border:double gray 1.0pt;
+    padding:2.9pt 2.9pt 2.9pt 2.9pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>Sherif Khattab, 6307 Senott Square,
+    412-624-8438,&nbsp;<a href="mailto:sherif.khattab@pitt.edu">sherif.khattab@pitt.edu</a>,
+    OH: MW 9-12 and 1-5pm</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width="17%" valign=top style='width:17.02%;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal style='line-height:normal'><b><span style='font-size:
+    12.0pt;font-family:"Times New Roman",serif'>Lectures:</span></b></p>
+    </td>
+    <td width="82%" valign=top style='width:82.98%;border:double gray 1.0pt;
+    border-top:none;padding:0in 2.9pt 2.9pt 2.9pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>TH 9:30-10:45 @ 332 CL</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width="17%" valign=top style='width:17.02%;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal style='line-height:normal'><b><span style='font-size:
+    12.0pt;font-family:"Times New Roman",serif'>T</span></b><b><span
+    lang=AR-SA dir=RTL style='font-size:12.0pt;font-family:"Times New Roman",serif'>&#1616;</span></b><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>As</span></b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>:</span></p>
+    </td>
+    <td width="82%" valign=top style='width:82.98%;border:double gray 1.0pt;
+    border-top:none;padding:0in 2.9pt 2.9pt 2.9pt'>
+    <p class=MsoNormal style='line-height:normal'>
+	
+	<p class=MsoNormal style='line-height:normal'><b><span style='font-size:
+    12.0pt;font-family:"Times New Roman",serif'>Class# 11153:&nbsp;</span></b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Maximillian
+    Bender, 6406 Sennott Square, <a href="mailto:mbender1@cs.pitt.edu"><span style='color:windowtext;
+    text-decoration:none'>mbender1@cs.pitt.edu</span></a><span
+    style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+    widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
+    text-decoration-color: initial;float:none;word-spacing:0px'>, OH: Tu/W/Th 3-5</span></p>
+	
+	
+	<p class=MsoNormal style='line-height:normal'><b><span style='font-size:
+    12.0pt;font-family:"Times New Roman",serif'>Class# 27129:&nbsp;</span></b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Ahmed Magooda,
+    5106 Sennott Square</span>, <a href="mailto:amagooda@cs.pitt.edu">amagooda@cs.pitt.edu</a></span><span
+    style='font-size:9.5pt;font-family:"Helvetica",sans-serif;color:#111111;
+    background:#F4F4F4'>&nbsp;</span></span><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>, OH: TuTh 1-3pm</span></span></p>
+    
+	
+	<b><span style='font-size:
+    12.0pt;font-family:"Times New Roman",serif'>Class# 29159:</span></b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;Amin
+    Sobhani, 6804 Sennott Square</span>, <a href="mailto:ams543@pitt.edu"
+    target="_blank"><span style='color:windowtext;text-decoration:none'>ams543@pitt.edu</span></a>,
+    OH: Th 12:30-3:30</span></p>
+    
+	
+    </td>
+   </tr>
+   <tr>
+    <td width="17%" valign=top style='width:17.02%;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal style='line-height:normal'><b><span style='font-size:
+    12.0pt;font-family:"Times New Roman",serif'>Textbook:</span></b></p>
+    </td>
+    <td width="82%" valign=top style='width:82.98%;border:double gray 1.0pt;
+    border-top:none;padding:0in 2.9pt 2.9pt 2.9pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>Michael Sipser , Introduction to the
+    Theory of Computation, 3rd Ed.</span></p>
+    </td>
+   </tr>
+  </table>
+  </td>
+ </tr>
+ <tr>
+  <td width=174 valign=top style='width:130.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:12.25pt;line-height:normal'><b><span
+  style='font-size:14.0pt;font-family:"Arial",sans-serif'>Grading Policy</span></b></p>
+  </td>
+  <td width=978 valign=top style='width:733.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif'>Midterm and Final exams&nbsp;</span></b><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif'>(65%): 40% on
+  higher grade and 25% on lower</span></p>
+  <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif'>Make-up exams can be scheduled well in
+  advance.</span></p>
+  <p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif'>Weekly homework problems</span></b><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;(20%):
+  every Friday</span></p>
+  <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif'>Homeworks are graded on a
+  Satisfactory/Unsatisfactory basis. Each homework is worth two points. Grade
+  is on the best ten homeworks out of the 12 offered.</span></p>
+  <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif'>Each homework has a deadline of&nbsp;<b>ten
+  days</b>. Homework will be typically posted on Fridays and are due the Monday
+  after the next at 11:59pm. Late submissions are allowed up to two days (i.e.,
+  Wednesday 11:59pm) with a 10% reduction for each late day.</span></p>
+  <table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+   style='border-collapse:collapse;border:none'>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>HW#</span></b></p>
+    </td>
+    <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Out on</span></b></p>
+    </td>
+    <td valign=top style='border:solid windowtext 1.0pt;border-left:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Due on
+    @11:59pm</span></b></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>0</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 9/1</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 9/11</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>1</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 9/8</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 9/18</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>2</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 9/15</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 9/25</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>3</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 9/22</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 10/02</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>4</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 9/29</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 10/09</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>5</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 10/06</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 10/16</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>6</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 10/13</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 10/23</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>7</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 10/20</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 10/30</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>8</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 11/03</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 11/13</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>9</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 11/10</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 11/20</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>10</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>F 11/17</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 11/27</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td valign=top style='border:solid windowtext 1.0pt;border-top:none;
+    padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>11</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 11/27</span></p>
+    </td>
+    <td valign=top style='border-top:none;border-left:none;border-bottom:solid windowtext 1.0pt;
+    border-right:solid windowtext 1.0pt;padding:0in 5.4pt 0in 5.4pt'>
+    <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+    font-family:"Times New Roman",serif'>M 12/04</span></p>
+    </td>
+   </tr>
+  </table>
+  <p class=MsoNormal style='line-height:normal'><b><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif'>Recitation&nbsp;</span></b><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif'>(15%): 2 quizzes
+  (10%) and attendance (5%)</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=174 valign=top style='width:130.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:12.25pt;line-height:normal'><b><span
+  style='font-size:14.0pt;font-family:"Arial",sans-serif'>Weekly Schedule</span></b></p>
+  </td>
+  <td width=978 valign=top style='width:733.5pt;padding:0in 0in 0in 0in'>
+  <table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 align=left
+   width=0 style='width:477.0pt;margin-left:-2.25pt;margin-right:-2.25pt'>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border:double gray 1.0pt;
+    border-right:none;padding:2.9pt 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Date</span></b></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border-top:double gray 1.0pt;
+    border-left:none;border-bottom:double gray 1.0pt;border-right:none;
+    padding:2.9pt 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Topic</span></b></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border-top:double gray 1.0pt;
+    border-left:none;border-bottom:double gray 1.0pt;border-right:none;
+    padding:2.9pt 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Reading</span></b></p>
+    </td>
+    <td width=119 valign=top style='width:84.0pt;border-top:double gray 1.0pt;
+    border-left:none;border-bottom:double gray 1.0pt;border-right:none;
+    padding:2.9pt 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Recitation</span></b></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border:double gray 1.0pt;
+    border-left:none;padding:2.9pt 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Homework</span></b></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>08/29</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Course
+    syllabus, Math Preliminaries-I</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>0.1</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>No recitation</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'><a
+    href="https://courseweb.pitt.edu/webapps/assignment/uploadAssignment?content_id=_23833135_1&amp;course_id=_410812_1&amp;group_id=&amp;mode=cpview">HW0</a></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>08/31</span></p>
+    </td>
+    <td width=258 rowspan=2 valign=top style='width:183.0pt;border:none;
+    border-bottom:double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Math
+    Preliminaries</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>0.2</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>09/05</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>0.3-0.4</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>Exercises: 0.6, 0.8, and 0.9.
+Problem 0.10</td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'><a href="https://courseweb.pitt.edu/webapps/assignment/uploadAssignment?content_id=_23854485_1&course_id=_410812_1&group_id=&mode=cpview"> HW1 </a></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>09/07</span></p>
+    </td>
+    <td width=258 rowspan=2 valign=top style='width:183.0pt;border:none;
+    border-bottom:double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Finite
+    Automata</span></p>
+    </td>
+    <td width=93 rowspan=2 valign=top style='width:66.0pt;border:none;
+    border-bottom:double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>1.1</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>09/12</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>
+	<a href="https://courseweb.pitt.edu/bbcswebdav/pid-24065147-dt-content-rid-22048396_2/xid-22048396_2">Recitation 2</a>
+	</span></b></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'><a href="https://courseweb.pitt.edu/webapps/assignment/uploadAssignment?content_id=_24044899_1&course_id=_410812_1&group_id=&mode=cpview">HW2</a></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>09/14</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Non-deterministic
+    Finite Automaton</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>1.2</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>09/19</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Regular
+    Expressions</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>1.3</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'><p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'><a href="https://courseweb.pitt.edu/webapps/blackboard/content/listContentEditable.jsp?content_id=_24065137_1&course_id=_410812_1">Quiz 1</a></span></p></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'><a href="https://courseweb.pitt.edu/webapps/assignment/uploadAssignment?content_id=_24058301_1&course_id=_410812_1&group_id=&mode=cpview">HW3</a></span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>09/21</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Pumping Lemma
+    for Regular Languages</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>1.4</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>09/26</span></p>
+    </td>
+    <td width=258 rowspan=2 valign=top style='width:183.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Turing
+    Machines</span></p>
+    </td>
+    <td width=93 rowspan=2 valign=top style='width:66.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.1</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>HW4</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>09/28</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>10/03</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Variants of
+    Turing Machines</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.2</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>HW5</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>10/05</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Definition of
+    Algorithm</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>3.3</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>10/10</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Fall Break (No
+    class)</span></b></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>HW6</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>10/12</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Decidable
+    Languages</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>4.1</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>10/17</span></p>
+    </td>
+    <td width=258 rowspan=2 valign=top style='width:183.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Undecidable
+    Problems</span></p>
+    </td>
+    <td width=93 rowspan=2 valign=top style='width:66.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='margin-bottom:12.0pt;text-align:
+    center;line-height:normal'><span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>4.2</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>HW7</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>10/19</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>10/24</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Midterm Exam</span></b></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>10/26</span></p>
+    </td>
+    <td width=258 rowspan=4 valign=top style='width:183.0pt;border:none;
+    border-bottom:double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Proving
+    undeciability by reducibility</span></p>
+    </td>
+    <td width=93 rowspan=4 valign=top style='width:66.0pt;border:none;
+    border-bottom:double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>5.1</span></p>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>5.2</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>10/31</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>HW8</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>11/02</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>11/07</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>HW9</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>11/09</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Mapping
+    Reducibility</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>5.3</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>11/14</span></p>
+    </td>
+    <td width=258 rowspan=2 valign=top style='width:183.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Measuring
+    Complexity</span></p>
+    </td>
+    <td width=93 rowspan=2 valign=top style='width:66.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>7.1</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Quiz 2</span></b></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>HW10</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>11/16</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>11/21</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Class-P
+    Problems</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>7.2</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>11/23</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Thanksgiving
+    Recess (No class)</span></b></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>11/28</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Class-NP
+    Problems</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>7.3</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>HW11</span></p>
+    </td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>11/30</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>NP-Completeness</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>7.4</span></p>
+    </td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>12/05</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Additional
+    NP-complete problems</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>7.5</span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>12/07</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><b><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Review</span></b></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+    <tr>
+    <td width=79 valign=top style='width:56.25pt;border-top:none;border-left:
+    double gray 1.0pt;border-bottom:double gray 1.0pt;border-right:none;
+    background:#CCCCCC;padding:0in 0in 2.9pt 2.9pt'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>12/15</span></p>
+    </td>
+    <td width=258 valign=top style='width:183.0pt;border:none;border-bottom:
+    double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'>Final Exam
+(10:00-11:50am)</span></p>
+    </td>
+    <td width=93 valign=top style='width:66.0pt;border:none;border-bottom:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 0in 2.9pt 0in'>
+    <p class=MsoNormal align=center style='text-align:center;line-height:normal'><span
+    style='font-size:12.0pt;font-family:"Times New Roman",serif'></span></p>
+    </td>
+    <td width=119 rowspan=2 valign=top style='width:84.0pt;border:none;
+    border-bottom:double gray 1.0pt;background:#CCCCCC;padding:0in 0in 2.9pt 0in'></td>
+    <td width=86 valign=top style='width:56.25pt;border-top:none;border-left:
+    none;border-bottom:double gray 1.0pt;border-right:double gray 1.0pt;
+    background:#CCCCCC;padding:0in 2.9pt 2.9pt 0in'></td>
+   </tr>
+   
+  </table>
+  </td>
+ </tr>
+ <tr>
+  <td width=174 valign=top style='width:130.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:12.25pt;line-height:normal'><b><span
+  style='font-size:14.0pt;font-family:"Arial",sans-serif'>Students with
+  Disabilities</span></b></p>
+  </td>
+  <td width=978 valign=top style='width:733.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:12.0pt;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif'>If you have a disability for which you
+  are or may be requesting an accommodation, you are encouraged to contact both
+  your instructor and&nbsp;<a href="http://www.drs.pitt.edu/">Disability
+  Resources and Services (DRS)</a>, 140 William Pitt Union, (412) 648-7890,
+  drsrecep@pitt.edu, (412) 228-5347 for P3 ASL users, as early as possible in
+  the term. DRS will verify your disability and determine reasonable
+  accommodations for this course.</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=174 valign=top style='width:130.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-top:12.25pt;line-height:normal'><b><span
+  style='font-size:14.0pt;font-family:"Arial",sans-serif'>Academic Integrity</span></b></p>
+  </td>
+  <td width=978 valign=top style='width:733.5pt;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:12.0pt;line-height:normal'><span
+  style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+  <p class=MsoNormal style='line-height:normal'><span style='font-size:12.0pt;
+  font-family:"Times New Roman",serif'>Students have the responsibility to be
+  honest and to conduct themselves in an ethical manner while pursuing academic
+  studies. Students have the right to be treated by faculty in a fair and
+  conscientious manner in accordance with the ethical standards generally
+  recognized within the academic community (as well as those recognized within
+  the profession). Should a student be accused of a breach of academic
+  integrity or have questions regarding faculty responsibilities, procedural
+  safeguards including provisions of due process have been designed to protect
+  student rights. These may be found in Guidelines on Academic Integrity:&nbsp;<a
+  href="https://provost.pitt.edu/faculty-resources/academic-integrity-freedom/academic-integrity-guidelines">Student
+  and Faculty Obligations and Hearing Procedures</a>.</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='line-height:normal'><span style='font-size:13.5pt;
+font-family:"Times New Roman",serif;color:black'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
