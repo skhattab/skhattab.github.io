@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Office Hours</title>
+  <style>
+    :root{
+      --bg: #ffffff;
+      --fg: #0f172a;           /* slate-900 */
+      --muted: #475569;        /* slate-600 */
+      --card: #f8fafc;         /* slate-50 */
+      --ring: #e2e8f0;         /* slate-200 */
+      --accent: #0ea5e9;       /* sky-500 */
+      --accent-contrast: #ffffff;
+      --badge-zoom: #e0f2fe;   /* sky-100 */
+      --badge-inperson: #dcfce7; /* green-100 */
+      --badge-zoom-text: #0369a1; /* sky-700 */
+      --badge-inperson-text: #166534; /* green-800 */
+    }
+    @media (prefers-color-scheme: dark){
+      :root{
+        --bg: #0b1220;
+        --fg: #e5e7eb;          /* zinc-200 */
+        --muted: #94a3b8;       /* slate-400 */
+        --card: #111827;        /* gray-900 */
+        --ring: #1f2937;        /* gray-800 */
+        --accent: #38bdf8;      /* sky-400 */
+        --accent-contrast: #0b1220;
+        --badge-zoom: #082f49;  /* dark sky */
+        --badge-inperson: #052e16; /* dark green */
+        --badge-zoom-text: #7dd3fc;
+        --badge-inperson-text: #86efac;
+      }
+    }
+    * { box-sizing: border-box; }
+    body{
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      display: grid;
+      place-items: start center;
+      padding: 24px;
+    }
+    .card{
+      width: min(900px, 100%);
+      background: var(--card);
+      border: 1px solid var(--ring);
+      border-radius: 16px;
+      box-shadow:
+        0 1px 1px rgba(0,0,0,.04),
+        0 8px 24px rgba(0,0,0,.08);
+      padding: clamp(18px, 2.5vw, 28px);
+    }
+    header{
+      display: grid;
+      gap: 6px;
+      margin-bottom: 14px;
+    }
+    h1{
+      font-size: clamp(20px, 3.6vw, 28px);
+      line-height: 1.2;
+      margin: 0;
+      letter-spacing: 0.2px;
+    }
+    .sub{
+      color: var(--muted);
+      font-size: clamp(13px, 2.2vw, 15px);
+    }
+    .row{
+      display: grid;
+      grid-template-columns: 1.1fr 1fr auto;
+      gap: 12px;
+      align-items: start;
+      padding: 12px 0;
+      border-top: 1px dashed var(--ring);
+    }
+    .row:first-of-type{ border-top: none; }
+    .dow{
+      font-weight: 600;
+      letter-spacing: .2px;
+    }
+    .time{
+      font-variant-numeric: tabular-nums;
+    }
+    .badges{ display: flex; gap: 8px; flex-wrap: wrap; }
+    .badge{
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 8px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .2px;
+      border: 1px solid var(--ring);
+      background: #fff;
+      color: var(--muted);
+    }
+    .badge.zoom{ background: var(--badge-zoom); color: var(--badge-zoom-text); border-color: color-mix(in srgb, var(--badge-zoom-text) 16%, transparent);}
+    .badge.inperson{ background: var(--badge-inperson); color: var(--badge-inperson-text); border-color: color-mix(in srgb, var(--badge-inperson-text) 16%, transparent);}
+    .actions{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 16px;
+    }
+    .btn{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      appearance: none;
+      text-decoration: none;
+      border: 1px solid var(--accent);
+      color: var(--accent-contrast);
+      background: var(--accent);
+      padding: 10px 14px;
+      border-radius: 10px;
+      font-weight: 700;
+      letter-spacing: .2px;
+      transition: transform .05s ease, box-shadow .2s ease, background .2s ease;
+      box-shadow: 0 6px 14px rgba(56, 189, 248, .25);
+    }
+    .btn:focus-visible{ outline: 2px solid var(--accent); outline-offset: 2px; }
+    .btn:hover{ transform: translateY(-1px); }
+    .btn.secondary{
+      background: transparent;
+      color: var(--fg);
+      border-color: var(--ring);
+      box-shadow: none;
+    }
+    .meta{
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 14px;
+      display: grid;
+      gap: 4px;
+    }
+    .legend{
+      margin-top: 12px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .legend .badge{ border-style: solid; }
+    .footer{
+      margin-top: 22px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--ring);
+      color: var(--muted);
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .sr-only{
+      position:absolute !important;
+      height:1px;width:1px;overflow:hidden;
+      clip:rect(1px,1px,1px,1px);
+      white-space:nowrap;border:0;padding:0;margin:-1px;
+    }
+    @media (max-width: 640px){
+      .row{
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .actions{ gap: 8px; }
+    }
+    /* Remove default iframe margins when embedded */
+    html,body{ height: 100%; }
+  </style>
+</head>
+<body>
+  <main class="card" role="region" aria-label="Office hours information">
+    <header>
+      <h1>Office Hours</h1>
+      <div class="sub">Fall 2025 · Times in America/New_York</div>
+    </header>
+
+    <!-- Schedule rows -->
+    <section aria-labelledby="schedule" role="table">
+      <h2 id="schedule" class="sr-only">Schedule</h2>
+
+      <div role="row" class="row">
+        <div role="cell" class="dow">Mon & Wed</div>
+        <div role="cell" class="time">09:00–11:00</div>
+        <div role="cell" class="badges">
+          <span class="badge zoom" title="Held on Zoom only">
+            <!-- camera icon -->
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M4 6h9a2 2 0 0 1 2 2v1.586l3.293-3.293A1 1 0 0 1 20 7v10a1 1 0 0 1-1.707.707L15 14.414V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>
+            Zoom only
+          </span>
+        </div>
+      </div>
+
+      <div role="row" class="row">
+        <div role="cell" class="dow">Mon & Wed</div>
+        <div role="cell" class="time">13:30–14:30</div>
+        <div role="cell" class="badges">
+          <span class="badge inperson" title="In-person available"> 
+            <!-- map-pin icon -->
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5z"/></svg>
+            In-person
+          </span>
+          <span class="badge zoom" title="Also on Zoom">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M4 6h9a2 2 0 0 1 2 2v1.586l3.293-3.293A1 1 0 0 1 20 7v10a1 1 0 0 1-1.707.707L15 14.414V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>
+            Zoom
+          </span>
+        </div>
+      </div>
+
+      <div role="row" class="row">
+        <div role="cell" class="dow">Tue & Thu</div>
+        <div role="cell" class="time">11:30–12:30</div>
+        <div role="cell" class="badges">
+          <span class="badge inperson" title="In-person available">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5z"/></svg>
+            In-person
+          </span>
+          <span class="badge zoom" title="Also on Zoom">
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="14" height="14"><path fill="currentColor" d="M4 6h9a2 2 0 0 1 2 2v1.586l3.293-3.293A1 1 0 0 1 20 7v10a1 1 0 0 1-1.707.707L15 14.414V16a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z"/></svg>
+            Zoom
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <div class="legend" aria-hidden="true">
+      <span class="badge inperson">In-person</span>
+      <span class="badge zoom">Zoom</span>
+    </div>
+
+    <div class="actions">
+      <a class="btn" href="https://outlook.office.com/book/OfficeHoursFall20251@pitt.onmicrosoft.com/?ismsaljsauthenabled" target="_blank" rel="noopener">
+        <!-- calendar icon -->
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M7 2a1 1 0 0 1 1 1v1h8V3a1 1 0 1 1 2 0v1h1a2 2 0 0 1 2 2v3H2V6a2 2 0 0 1 2-2h1V3a1 1 0 0 1 2 0v1zM2 10h20v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/></svg>
+        Book a slot
+      </a>
+      <!-- Optional: add your Zoom room link here if you have a persistent room -->
+      <!-- <a class="btn secondary" href="ZOOM_LINK" target="_blank" rel="noopener">Join Zoom</a> -->
+    </div>
+
+    <div class="meta">
+      <div><strong>Location:</strong> 6307 Sennott Square (in-person slots)</div>
+      <div><strong>Zoom:</strong> Link provided after booking</div>
+    </div>
+
+    <div class="footer">
+      <div>Updated: <span id="updated"></span></div>
+      <div>Questions? Email <a href="mailto:sherif@pitt.edu">sherif@pitt.edu</a></div>
+    </div>
+  </main>
+
+  <script>
+    // Populate "Updated" to the page's last modified date for transparency
+    const t = new Date(document.lastModified);
+    const f = new Intl.DateTimeFormat(undefined, {
+      year: 'numeric', month: 'short', day: '2-digit'
+    }).format(t);
+    document.getElementById('updated').textContent = f;
+  </script>
+</body>
+</html>
